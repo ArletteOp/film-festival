@@ -1,0 +1,349 @@
+body {
+    padding-top: 67px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight:900;
+    color: white;
+}
+
+
+h2  {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight:900;
+    color: white; 
+}
+
+h6 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight:900;
+    color: white; 
+}
+
+h1#registration {
+color:black;
+}
+
+
+.section-title {
+    letter-spacing: 10px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 80px;
+    background-color:white;
+    margin: 5px auto;
+}
+
+
+/* NAVIGATION BAR */
+
+.main-nav {
+    background-color: #febe59;
+}
+
+.main-nav .navbar-toggler {
+    padding: 0;
+    border: 0;
+}
+
+.main-nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.main-nav .navbar-toggler-icon {
+    background-image: none;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    transition: all 0.5s ease;
+
+}
+
+.main-nav .navbar-toggler-icon::before,
+.main-nav .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    left: 0;
+    display: block;
+    background-color: inherit;
+    transition: all 0.5s ease;
+
+}
+
+.main-nav .navbar-toggler-icon::before {
+    top: -8px;
+}
+.main-nav .navbar-toggler-icon::after {
+    bottom: -8px;
+}
+
+.main-nav .navbar-toggler[aria-expanded^="t"] .navbar-toggler-icon {
+    background-color: transparent;
+}
+.main-nav .navbar-toggler[aria-expanded^="t"] .navbar-toggler-icon::before {
+    background-color: red;
+    transform: rotate( 45deg ) translate(5px, 5px);
+
+}
+.main-nav .navbar-toggler[aria-expanded^="t"] .navbar-toggler-icon::after {
+    background-color: red;
+    transform: rotate( -45deg ) translate(6px, -6px);
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:unset;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:unset;
+}
+
+.nav-link {
+    color: black;
+    font-weight:700;
+}
+.nav-link:hover{
+    font-weight: 900;
+}
+
+
+/* HEADER */
+
+.festival-poster {
+    width: auto;
+    height: calc(100vh - 67px);
+    margin-left: auto;
+}
+
+#film-festival-header{
+    position: relative;
+}
+
+#film-festival-header::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("images/boston-header.jpg");
+    background-size:150%;
+    opacity: 0.5;
+}
+
+.registration {
+    padding-top: 15%;
+}
+
+.registration-span {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+/* ABOUT US */
+
+#about-us {
+    /* background-color: #44100c; */
+    background-color: #000;
+    height: auto;
+}
+
+#about-us img {
+    width: auto;
+  }
+
+
+  /* SCHEDULE CAROUSEL */
+
+.bg-blue {
+    background-color: #178a94;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: white;
+  } 
+
+.rotate {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.news-text {
+    color: white;
+}
+
+.btn-trailer {
+    background-color: #03484e;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn-trailer:hover {
+    background-color: #02292c;
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* REGISTRATION FORM */
+
+.bg-pink {
+    background-color:#fe6c59 ;
+}
+
+label {
+    font-size:larger;
+}
+
+
+/*LATEST NEWS */
+
+.bg-black {
+    background-color: #3a0f0b;
+}
+
+.latest-news-img {
+    max-width:100%;
+    padding: unset;
+}
+
+.feed-container .content .item .description {
+    margin: 0 0 0 3px;
+    padding: 0 2px 0 3px;
+    color: #fff;
+}
+
+
+/* PARTNERS */
+
+#partners img {
+    width: auto;
+    height: 80px;
+  }
+
+/* To avoid image stretching */
+  img {
+    align-self: center
+ }
+
+
+/* FOOTER */
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+
+.footer-list {
+    list-style-type: none;
+}
+
+
+/* newsletter */
+
+
+#newsletter-registration {
+    background-color: #178a94;
+    padding: 10%;
+}
+
+.newsletter-paragraph {
+    font-weight: 500;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: rgb(70, 67, 67);
+    border-color: rgb(70, 67, 67);
+}
+
+
+/* contact */
+
+.social-icon {
+    width: 40px;
+  }
+
+
+.contact a {
+    color:white;    
+}  
+
+.contact a:hover {
+    color:#febe59;    
+}  
+
+iframe {
+    width: 100%;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        letter-spacing: 5px;
+    }
+
+    .festival-poster {
+        width: 100%;
+        height: auto;
+    }
+    .billboard-text {
+        color: white;
+        padding: 3%;
+    }
+
+    #about-us p {
+        text-align: center;
+    }
+
+    .schedule-slider {
+        width: 100%;
+    }
+    
+.footer-column {
+    text-align: center;
+padding-bottom: 8vh;
+    }
+
+    #partners img {
+        height: 45px;
+    }
+
+    iframe {
+        height: 60vh;
+        margin-top: 40px;
+    }
+}
